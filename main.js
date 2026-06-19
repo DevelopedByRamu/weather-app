@@ -147,7 +147,7 @@ function updateWeatherDisplay(data) {
     weatherDescription.includes("rain")
   ) {
     document.getElementById("advice").textContent =
-      "you might need to put on somethong warm.";
+      "you might need to put on something warm.";
   } else if (
     data.main.temp >= 1 &&
     data.main.temp < 27 &&
