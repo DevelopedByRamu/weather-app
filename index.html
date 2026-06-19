@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="app-layout">
+    <div class="container">
+        <h1 id="city-name">johannesburg</h1>
+    
+        <img id="weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="temperature">25°C</p>
+        <p id="weather-description">Sunny</p>
+        <p id="advice">dress light today bud!!</p> 
+    </div>
+
+    <div class="search-bar">
+      <input id="city" type="text" placeholder="Search for a city...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="sidebar-cards">
+      <div class="wind-speed">
+        <h2>Wind Speed</h2>
+        <img id="wind-speed-icon" src="img/wind (1).png" alt="Wind Icon">
+        <p id="wind-speed-value">15 km/h</p>
+      </div>
+      <div class="humidity">
+        <h2>Humidity</h2>
+        <img id="humidity-icon" src="img/humidity (1).png" alt="Humidity Icon">
+        <p id="humidity-value">60%</p>
+      </div>
+      <div class="chance-of-rain">
+        <h2>Chance of Rain</h2>
+        <img id="rain-icon" src="img/precipitation (2).png" alt="Rain Icon">
+        <p id="rain-value">20%</p>
+      </div>
+      <div class="air-pressure">
+        <h2>Air Pressure</h2>
+        <img id="pressure-icon" src="img/air (2).png" alt="Pressure Icon">
+        <p id="pressure-value">1013 mb</p>
+      </div>
+    </div>
+
+     <div class="sidebar-cards-sunrise-sunset">
+      <div class="sunrise">
+        <h2>Sunrise</h2>
+        <img id="sunrise-icon" src="img/sunrise.png" alt="Sunrise Icon">
+        <p id="sunrise-value">06:00 AM</p>
+      </div>
+      <div class="sunset">
+        <h2>Sunset</h2>
+        <img id="sunset-icon" src="img/sunset.png" alt="Sunset Icon">
+        <p id="sunset-value">06:00 PM</p>
+      </div>
+     </div>
+
+    <div class="todays-forecast">
+      <div class="forecast-header">
+    
+      <h2 id="time-of-day">Now</h2>
+      <img id="todays-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+      <p id="todays-temperature">25°C</p>
+      </div>
+<div class="forecast-header">
+      <h2 id="time-of-day">09:00</h2>
+      <img id="todays-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+      <p id="todays-temperature">25°C</p>
+      </div> 
+
+<div class="forecast-header">
+      <h2 id="time-of-day">12:00</h2>
+      <img id="todays-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+      <p id="todays-temperature">25°C</p>
+      </div>
+
+<div class="forecast-header">
+      <h2 id="time-of-day">15:00</h2>
+      <img id="todays-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+      <p id="todays-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-header">
+      <h2 id="time-of-day">18:00</h2>
+      <img id="todays-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+      <p id="todays-temperature">25°C</p>
+      </div>
+    </div>
+
+    <!-- div for the next 5 days weather forecast -->
+    <div class="five-day-forecast"> 5 Day Forecast
+      <div class="forecast-day">
+        <h3 id="day">Mon</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Tue</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Wed</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Thu</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Fri</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Sat</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+
+      <div class="forecast-day">
+        <h3 id="day">Sun</h3>
+        <img id="forecast-weather-icon" class="weather-icon" src="img/sun.png" alt="Weather Icon">
+        <p id="forecast-temperature">25°C</p>
+      </div>
+    </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
