@@ -143,14 +143,14 @@ function updateWeatherDisplay(data) {
       "It's pretty cold outside, you might want to put on a jacket.";
   } else if (
     data.main.temp >= 1 &&
-    data.main.temp < 30 &&
+    data.main.temp < 29 &&
     weatherDescription.includes("rain")
   ) {
     document.getElementById("advice").textContent =
-      "you might need to put on something warm.";
+      "You might need to put on something warm.";
   } else if (
     data.main.temp >= 1 &&
-    data.main.temp < 30 &&
+    data.main.temp < 31 &&
     weatherDescription.includes("overcast")
   ) {
     document.getElementById("advice").textContent =
@@ -162,7 +162,7 @@ function updateWeatherDisplay(data) {
   ) {
     document.getElementById("advice").textContent =
       "It's quite stormy outside, you might want to stay indoors.";
-  } else if (data.main.temp >= 15 && data.main.temp < 30) {
+  } else if (data.main.temp >= 15 && data.main.temp < 27) {
     document.getElementById("advice").textContent =
       "The weather is quite pleasant, you can go out and enjoy the day!";
   } else if (data.main.temp >= 30) {
