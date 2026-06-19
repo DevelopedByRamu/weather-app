@@ -154,7 +154,7 @@ function updateWeatherDisplay(data) {
     weatherDescription.includes("overcast")
   ) {
     document.getElementById("advice").textContent =
-      "It's pretty cool today, you might want to put on a light jacket.";
+      "It's pretty cool today, you might want to wear something light but also bring a jacket just in case.";
   } else if (
     data.main.temp >= 1 &&
     data.main.temp < 27 &&
@@ -167,7 +167,7 @@ function updateWeatherDisplay(data) {
       "The weather is quite pleasant, you can go out and enjoy the day!";
   } else if (data.main.temp >= 27) {
     document.getElementById("advice").textContent =
-      "It's quite hot outside, make sure to stay hydrated and dress light!";
+      "It's quite hot outside, make sure to stay hydrated, use sunscreen, and dress lightly.";
   }
   //else if (data.weather[0].main.toLowerCase().includes("rain")) {//
 
